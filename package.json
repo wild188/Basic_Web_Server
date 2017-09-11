@@ -1,0 +1,26 @@
+{
+  "name": "ezflow",
+  "version": "1.0.0",
+  "description": "A web application that helps college students better plan out their course loads. ",
+  "main": "staticServer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://wild188@bitbucket.org/wild188/ezflow.git"
+  },
+  "author": "Nate Gyory, Billy DeLucia, Fergus Watkins",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/wild188/ezflow#readme",
+  "dependencies": {
+    "bootstrap-select": "^1.12.2",
+    "google-auth-library": "^0.10.0",
+    "mysql": "^2.13.0",
+    "promise": "^7.1.1",
+    "request": "^2.81.0",
+    "rsvp": "^3.3.3",
+    "tedious": "^1.14.0"
+  }
+}

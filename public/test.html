@@ -1,0 +1,163 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ezFlow</title>
+    <link rel="stylesheet" href="./public/CSS/main.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
+
+    <!-- d3 graph -->
+    <script src="./public/JS/main.js"></script>
+    <!--<script src="./public/JS/homepage.js"></script>-->
+    <script src="./public/JS/test.js"></script>
+    <script src="./public/JS/d3.min.js"></script>
+    <script src="./public/JS/d3.testDependencyWheel.js"></script>
+    
+<body>
+    <div class="container-fluid">
+        <div class="row" id="header"> 
+            <div class="col-sm-3">
+                <p id="websitetitle">ezFlow</p>
+            </div>
+            <div class="col-sm-6">
+                <p id="pagetitle">Plan Your Major Track</p>
+            </div>
+            <div class="col-sm-3">
+                <p class="text-right titlelink"" ><a class="titlelink" href="./adminlogin.html">Admin Login</a></p>
+            </div>
+        </div>
+
+        <!-- Dropdown Menus -->
+        <div class="row btnbar">
+            
+            <!-- University Button -->
+            <div class="btn-group col-sm-3">
+                <select onchange="schoolSelected()" id="UniversityDropDown" class="selectpicker" title="School...">
+                </select>
+            </div>
+            
+            <!-- Major Button -->
+            <div class="btn-group col-sm-3">
+                <select onchange="majorSelected()" id="MajorsDropDown" class="selectpicker" title="Major...">
+                </select>
+            </div>
+
+            <div class="btn-group col-sm-2">
+            <button type="button" class="btn btn-primary" id="reset" onclick="reset()">Reset</button>
+            </div>
+
+            <div class=" panel panel-primary col-sm-3 legend">
+               <ul class="legendlist">
+                    <li>Legend:</li>
+                    <li><span class="untaken"></span>Untaken</li>
+                    <li><span class="available"></span>Avaliable</li>
+                    <li><span class="taken"></span>Taken</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!--Body of Homepage -->
+        <div class="row">
+            
+            <!-- Left Column/FlowChart Box -->
+            <div class="col-sm-7">
+                <div class="panel panel-primary">
+                <p class="panel-heading panel-title">
+                    PreReq Wheel
+                </p>
+                <div class="panel-body" id="target" >
+                    <!-- <script src="./public/JS/test.js">createChart()</script> -->
+                    <p><strong>Select your school and your major to view you Pre-requisite chart!</strong></p>
+                    <p>All the courses require for you current major will appear in a graph here.</p>
+                    <p>Simply click on what courses you've taken so far to view what courses are
+                    available for you to take next semester.</p>
+                </div>
+                <div class="panel-footer"></div>
+            </div>
+            </div>
+            <!--Right Column-->
+            <div class="col-sm-5" >
+            <!--Legend Box-->
+            <div class="" id="legendBox">
+            <div class="panel panel-primary">
+                <div class="panel-heading panel-title">
+                    Course List
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-xs-5 nottaken">
+                            <strong>Not Taken</strong>
+                        </div>
+                        <div class="col-xs-2" id="transferDiv">
+                        <span class="glyphicon glyphicon-transfer"/>
+                        </div>
+                        <div class="col-xs-5 taken">
+                            <strong>Taken</strong>
+                        </div>
+                    </div>
+                    <div class="col-xs-12"><hr></div></hr>
+
+                    <!--Legend lists-->
+                    <div class="row">
+                        <!--<div class="col-xs-4" id="availableListGray">
+                            <ul class="list-group" id="availableList">
+                                <!--<li class="list-group-item fixed disabled"></li>-->
+                        <!--</div>-->
+                        <div class="col-xs-6">
+                        <ul class="legendTable list-group" id="notTakenList">
+                                <!--<li class="list-group-item fixed"></li> -->
+                        </ul>
+                        </div>
+                        <div class="col-xs-6">
+                        <ul class="legendTable list-group" id="takenList">
+                                <!--<li class="list-group-item fixed"></li> -->
+                        </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="panel-footer"></div>
+            </div>
+            </div>
+            <!--Course Description Box-->
+            <div class="panel panel-primary">
+                <div class="panel-heading panel-title">
+                    Course Description
+                </div>
+                <div class="panel-body">
+                <p id="courseName">Click on a course to view it's description!</p>
+                <p id="courseDescription">
+                <p id="courseLink"></p> 
+                <p id="courseCredits"></p>
+                </p>
+                </div>
+                <div class="panel-footer"></div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+
+    <div class="footer">
+        Created by Billy DeLucia, Nate Gyory, and Ferguson Watkins
+    </div>
+</body>
+</html>

@@ -1,0 +1,239 @@
+#header {
+    padding: 10px;
+    /*margin-bottom: 20px;*/
+    background-color:  #21af76; /* #00bdb2; /* #21af76; */
+}
+
+#pagetitle {
+    color: black !important;
+    font-size: 24pt;
+    text-align: center;
+}
+
+#logintitle {
+    font-size: 24pt;
+    text-align: center;
+    color: #ffc500 !important; /*#dda413;*/
+
+}
+
+#websitetitle {
+    font-size: 24pt;
+    color: #ffc500; /*#dda413;*/
+    margin-left: 20px;
+}
+
+#subtitle {
+    margin-top:10px;
+    margin-bottom:10px;
+    font-size: 16pt;
+    font-weight: bold;
+    text-align: left;
+}
+
+#adminsubtitle {
+    padding-left: 15px;
+    margin-top:10px;
+    margin-bottom:10px;
+    font-size: 16pt;
+    font-weight: bold;
+    text-align: left;
+}
+
+#box {
+    margin: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+#leftbox {
+    border-right-style: solid;
+    border-right-color: black;
+    border-right-width: 1px;
+}
+
+#loginhomelink {
+    color: black !important;
+}
+
+#moveButtonAdd {
+    margin-top:700%;
+}
+
+#moveButtonRemove{
+    margin-top: 100%;
+}
+
+#courseName{
+    font-weight: bold;
+}
+
+#availableListGray{
+    background-color: #cccccc;
+}
+
+#ExistingCouresPanel{
+    min-height: 500px;
+    max-height: 500px;
+    overflow: auto;
+}
+
+.panel500{
+    min-height: 500px;
+    max-height: 500px;
+    overflow: auto;
+}
+
+#searchCoursesText {
+    margin: 5px;
+}
+
+.panel {
+    border-color: #21af76 !important;
+}
+
+.panel-heading, panel-title {
+    color: black !important;
+    background-color: #54dea7 !important;
+    border-color: #21af76 !important;
+}
+
+.btnbar {
+    padding: 20px;
+}
+
+.glyphicon-pencil, .glyphicon-remove, .glyphicon-ok, .glyphicon-move {
+    padding-left: 5px;
+    float:right;
+}
+
+.glyphicon-transfer {
+    font-size: 200%;
+}
+
+#transferDiv{
+    text-align: center;
+}
+
+.list-group {
+    margin: 15px;
+}
+
+.list-group-item:hover{
+    cursor: pointer;
+}
+
+
+.btn-primary:hover {
+    background-color: #FFC500 !important;
+}
+
+.btn-primary, .dropdown-toggle {
+    color: black !important;
+    background-color: #ffcf33 !important;
+    border-color: #cc9c00 !important;
+}
+
+.btn-secondary:hover {
+    background-color: #cccccc;
+}
+
+g text {
+    
+    color: black !important;
+    fill: black !important;
+    stroke: none  !important;
+}
+
+.btn-secondary {
+    border-color: #a6a6a6 !important;
+}
+
+.titlelink {
+    padding-right: 5px;
+    color: white !important;
+}
+
+.upload-drop-zone {
+  height: 200px;
+  border-width: 2px;
+  margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+h4 {
+    color: black !important;
+}
+
+
+/* skin.css Style*/
+.upload-drop-zone {
+  color: #ccc;
+  border-style: dashed;
+  border-color: #ccc;
+  line-height: 200px;
+  text-align: center
+}
+.upload-drop-zone.drop {
+  color: #222;
+  border-color: #222;
+}
+
+svg{
+    width: 100%;
+}
+
+.available{
+    padding: 5px;
+    text-align: center;
+    background-color: #FFC500;
+}
+
+.taken{
+    /*padding: 5px;*/
+    text-align: center;
+}
+
+.nottaken{
+    /*padding: 5px;*/
+    text-align: center;
+}
+
+#takenList, #notTakenList, #availableList {
+    min-height: 400px;
+    max-height: 400px;
+    overflow: auto;
+    border: 3px black;
+}
+
+.bootstrap-dialog .bootstrap-dialog-title {
+    color:black !important;
+}
+
+.modal-header {
+    color: black !important;
+    background-color: #54dea7 !important;
+}
+
+.footer {
+    clear: both;
+    position: relative;
+    z-index: 10;
+    height: 3em;
+    margin-top: -3em;
+    background-color: #efefef;
+    text-align: center;
+}
+
+/* basic positioning */
+.legendlist { list-style: none; height: 19.231px; padding-bottom: 6px; padding-top: 6px; float: left;}
+.legendlist li { float: left; margin-right: 10px; }
+.legendlist span { border: 1px solid #ccc; float: left; width: 12px; height: 12px; margin: 2px; }
+/* your colors */
+.legendlist .untaken { background-color: #cccccc; }
+.legendlist .available { background-color: #FFC500; }
+.legendlist .taken { background-color: #54dea7; }
